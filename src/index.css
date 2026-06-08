@@ -23,10 +23,11 @@ html {
 }
 
 body {
-  background-color: #F3F7F6;
+  background-color: #ffffff;
   color: #1A2E2C;
   font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
 }
 
