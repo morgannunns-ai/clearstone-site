@@ -1,21 +1,25 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import Philosophy from "./components/Philosophy";
-import Protocol from "./components/Protocol";
-import WhoWeWorkWith from "./components/WhoWeWorkWith";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Navbar       from "./components/Navbar";
+import Hero         from "./components/Hero";
+import TrustBar     from "./components/TrustBar";
+import Problems     from "./components/Problems";
+import Solutions    from "./components/Solutions";
+import HowItWorks   from "./components/HowItWorks";
+import ClaraSection from "./components/ClaraSection";
+import Testimonials from "./components/Testimonials";
+import Contact      from "./components/Contact";
+import Footer       from "./components/Footer";
 
 export default function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Features />
-      <Philosophy />
-      <Protocol />
-      <WhoWeWorkWith />
+      <TrustBar />
+      <Problems />
+      <Solutions />
+      <HowItWorks />
+      <ClaraSection />
+      <Testimonials />
       <Contact />
       <Footer />
     </>

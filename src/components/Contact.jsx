@@ -8,12 +8,11 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Contact() {
   const ref = useRef(null);
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading]     = useState(false);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(".contact-inner", { opacity: 0, y: 28, duration: 0.7, ease: "power3.out",
-        scrollTrigger: { trigger: ref.current, start: "top 78%" } });
+      gsap.from(".contact-inner", { opacity: 0, y: 28, duration: 0.7, ease: "power3.out", scrollTrigger: { trigger: ref.current, start: "top 78%" } });
     }, ref);
     return () => ctx.revert();
   }, []);
@@ -26,73 +25,103 @@ export default function Contact() {
       await fetch("https://clearstoneproperty.co.uk/enquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: f.name.value, email: f.email.value, property: f.property.value, role: f.role.value, message: f.message.value }),
+        body: JSON.stringify({ name: f.name.value, email: f.email.value, phone: f.phone?.value || "", message: f.message.value }),
       });
     } catch (_) {}
     setLoading(false);
     setSubmitted(true);
   };
 
-  const inp = "w-full px-4 py-2.5 rounded-lg text-sm transition-colors duration-200 focus:outline-none";
-  const inpStyle = { border: "1px solid #c8dedd", background: "white", color: "#1A2E2C", fontSize: "0.95rem" };
-  const inpFocus = { "--tw-ring-color": "#2C5F5D" };
+  const inp = {
+    width: "100%", padding: "12px 16px", borderRadius: 10,
+    border: "1.5px solid #D1D9D7", background: "white",
+    fontSize: "0.9rem", fontFamily: "inherit", color: "#1A202C",
+    outline: "none", transition: "border-color 0.2s",
+  };
 
   return (
-    <section id="contact" ref={ref} className="py-24 px-6 md:px-10" style={{ background: "#f3f8f7" }}>
-      <div className="contact-inner" style={{ maxWidth: 860, margin: "0 auto" }}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
+    <section id="contact" ref={ref} style={{ padding: "96px 32px", background: "white" }}>
+      <div className="contact-inner" style={{ maxWidth: 1000, margin: "0 auto" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "start" }} className="grid-cols-1 md:grid-cols-2">
 
+          {/* Left */}
           <div>
-            <p className="text-xs font-600 uppercase tracking-widest mb-3" style={{ color: "#2C5F5D", letterSpacing: "0.14em" }}>Get in touch</p>
-            <h2 className="font-700 mb-4 leading-snug" style={{ fontSize: "1.75rem", color: "#1A2E2C" }}>
-              Tell us about the property
+            <p style={{ fontSize: "0.78rem", fontWeight: 700, color: "#B8892A", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>Get In Touch</p>
+            <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 800, color: "#1B2B4B", lineHeight: 1.2, letterSpacing: "-0.02em", marginBottom: 16 }}>
+              Let's Discuss Your Situation
             </h2>
-            <p className="leading-relaxed mb-6" style={{ color: "#3d5c5a" }}>
-              The quickest way to find out whether we can help is to send us a short message. We respond to all enquiries promptly and will not pass your details on to anyone else.
+            <p style={{ color: "#4A5568", lineHeight: 1.8, marginBottom: 28 }}>
+              Every situation is different. A short conversation with Clara is always the best place to start — there is no obligation and no pressure.
             </p>
-            <div className="space-y-2 mb-6">
-              {[
-                "We respond within one business day",
-                "No obligation at this stage",
-                "Shropshire, Worcestershire & the wider West Midlands",
-              ].map((item) => (
-                <div key={item} className="flex items-start gap-2.5">
-                  <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: "#2C5F5D" }} />
-                  <p className="text-sm leading-relaxed" style={{ color: "#3d5c5a" }}>{item}</p>
+
+            {/* Clara mini card */}
+            <div style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 20px", background: "#F7F9F8", borderRadius: 16, border: "1.5px solid #E2EAE8", marginBottom: 28 }}>
+              <div style={{ width: 52, height: 52, borderRadius: "50%", overflow: "hidden", flexShrink: 0 }}>
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80" alt="Clara"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+              </div>
+              <div>
+                <div style={{ fontWeight: 700, fontSize: "0.9rem", color: "#1B2B4B" }}>Clara</div>
+                <div style={{ fontSize: "0.8rem", color: "#6B7280" }}>Property Solutions Specialist</div>
+                <div style={{ fontSize: "0.78rem", color: "#6B8F6B", fontWeight: 600, marginTop: 2 }}>● Available now</div>
+              </div>
+            </div>
+
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {["Confidential conversation","No obligation","Response within one business day","Shropshire, Worcestershire & West Midlands"].map(item => (
+                <div key={item} style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                  <span style={{ color: "#6B8F6B", fontWeight: 700 }}>✓</span>
+                  <span style={{ fontSize: "0.88rem", color: "#4A5568" }}>{item}</span>
                 </div>
               ))}
             </div>
-            <p className="text-sm" style={{ color: "#3d5c5a" }}>
-              Email: <a href="mailto:clara@clearstoneproperty.co.uk" className="hover:underline" style={{ color: "#2C5F5D" }}>clara@clearstoneproperty.co.uk</a>
+
+            <p style={{ marginTop: 24, fontSize: "0.88rem", color: "#4A5568" }}>
+              Email: <a href="mailto:clara@clearstoneproperty.co.uk" style={{ color: "#1B2B4B", fontWeight: 600 }}>clara@clearstoneproperty.co.uk</a>
             </p>
           </div>
 
+          {/* Right: form */}
           <div>
             {submitted ? (
-              <div className="rounded-xl p-10 flex flex-col items-center text-center gap-4 bg-white" style={{ border: "1px solid #d8eae8" }}>
-                <CheckCircle size={36} style={{ color: "#2C5F5D" }} />
-                <h3 className="font-600 text-base" style={{ color: "#1A2E2C" }}>Thank you. We will be in touch shortly.</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#3d5c5a" }}>We typically respond within one business day.</p>
+              <div style={{ padding: "48px 32px", borderRadius: 20, background: "#F7F9F8", border: "1.5px solid #E2EAE8", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: 16 }}>
+                <CheckCircle size={40} style={{ color: "#6B8F6B" }} />
+                <h3 style={{ fontWeight: 700, fontSize: "1.05rem", color: "#1B2B4B" }}>Thank you — we will be in touch shortly.</h3>
+                <p style={{ fontSize: "0.9rem", color: "#4A5568", lineHeight: 1.75 }}>Clara will respond within one business day. Your enquiry is treated in complete confidence.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-3">
-                <input type="text" name="name" placeholder="Your name" required className={inp} style={inpStyle} />
-                <input type="email" name="email" placeholder="Email address" required className={inp} style={inpStyle} />
-                <input type="text" name="property" placeholder="Property address (if known)" className={inp} style={inpStyle} />
-                <select name="role" defaultValue="" className={inp + " appearance-none cursor-pointer"} style={inpStyle}>
-                  <option value="" disabled>Your role</option>
-                  <option value="executor">Executor</option>
-                  <option value="solicitor">Solicitor</option>
-                  <option value="estate_agent">Estate agent</option>
-                  <option value="other">Other</option>
-                </select>
-                <textarea name="message" placeholder="Tell us a bit about the property and what you need" rows={4} className={inp + " resize-none"} style={inpStyle} />
+              <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+                <div>
+                  <label style={{ fontSize: "0.8rem", fontWeight: 600, color: "#374151", display: "block", marginBottom: 6 }}>Your name</label>
+                  <input name="name" type="text" required placeholder="Full name" style={inp}
+                    onFocus={e => e.target.style.borderColor = "#1B2B4B"}
+                    onBlur={e => e.target.style.borderColor = "#D1D9D7"} />
+                </div>
+                <div>
+                  <label style={{ fontSize: "0.8rem", fontWeight: 600, color: "#374151", display: "block", marginBottom: 6 }}>Email address</label>
+                  <input name="email" type="email" required placeholder="your@email.com" style={inp}
+                    onFocus={e => e.target.style.borderColor = "#1B2B4B"}
+                    onBlur={e => e.target.style.borderColor = "#D1D9D7"} />
+                </div>
+                <div>
+                  <label style={{ fontSize: "0.8rem", fontWeight: 600, color: "#374151", display: "block", marginBottom: 6 }}>Phone number <span style={{ fontWeight: 400, color: "#9CA3AF" }}>(optional)</span></label>
+                  <input name="phone" type="tel" placeholder="07xxx xxxxxx" style={inp}
+                    onFocus={e => e.target.style.borderColor = "#1B2B4B"}
+                    onBlur={e => e.target.style.borderColor = "#D1D9D7"} />
+                </div>
+                <div>
+                  <label style={{ fontSize: "0.8rem", fontWeight: 600, color: "#374151", display: "block", marginBottom: 6 }}>Brief message</label>
+                  <textarea name="message" rows={4} placeholder="Tell us a little about your situation and what you need..." style={{ ...inp, resize: "none" }}
+                    onFocus={e => e.target.style.borderColor = "#1B2B4B"}
+                    onBlur={e => e.target.style.borderColor = "#D1D9D7"} />
+                </div>
                 <button type="submit" disabled={loading}
-                  className="w-full py-3 font-600 text-sm rounded-lg text-white transition-all duration-200 hover:opacity-90 disabled:opacity-60"
-                  style={{ background: "#2C5F5D" }}>
-                  {loading ? "Sending…" : "Send enquiry"}
+                  style={{ padding: "14px", background: "#1B2B4B", color: "white", border: "none", borderRadius: 12, fontSize: "0.92rem", fontWeight: 700, fontFamily: "inherit", cursor: "pointer", transition: "opacity 0.2s", opacity: loading ? 0.65 : 1 }}>
+                  {loading ? "Sending…" : "Book My Consultation"}
                 </button>
-                <p className="text-xs text-center" style={{ color: "#8aadab" }}>No obligation. Your details stay private.</p>
+                <p style={{ fontSize: "0.76rem", color: "#9CA3AF", textAlign: "center" }}>
+                  Confidential. No obligation. We never share your details.
+                </p>
               </form>
             )}
           </div>

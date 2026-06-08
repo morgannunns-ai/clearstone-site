@@ -1,49 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
 @import "tailwindcss";
 
 @theme {
-  --color-charcoal: #F3F7F6;
-  --color-clay: #2C5F5D;
-  --color-cream: #1A2E2C;
-  --color-moss: #E4EEEC;
-
-  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, monospace;
+  --color-navy:    #1B2B4B;
+  --color-gold:    #B8892A;
+  --color-sage:    #6B8F6B;
+  --color-ink:     #1A202C;
+  --color-mist:    #F7F9F8;
+  --color-border:  #E2EAE8;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background-color: #ffffff;
-  color: #1A2E2C;
+  background: #ffffff;
+  color: #1A202C;
   font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   font-size: 17px;
-  line-height: 1.8;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Noise overlay */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  opacity: 0.04;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  background-size: 200px 200px;
-}
-
-/* Scrollbar */
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: #F3F7F6; }
-::-webkit-scrollbar-thumb { background: #2C5F5D; border-radius: 2px; }
+::-webkit-scrollbar-track { background: #ffffff; }
+::-webkit-scrollbar-thumb { background: #1B2B4B; border-radius: 2px; }
