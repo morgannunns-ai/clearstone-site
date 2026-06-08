@@ -62,10 +62,10 @@ export default function Footer() {
             </p>
             <div className="space-y-3">
               <a
-                href="mailto:morgan@clearstoneproperty.co.uk"
+                href="mailto:clara@clearstoneproperty.co.uk"
                 className="block font-sans text-cream/45 text-sm hover:text-clay transition-colors duration-200"
               >
-                morgan@clearstoneproperty.co.uk
+                clara@clearstoneproperty.co.uk
               </a>
               <p className="font-sans text-cream/30 text-sm">
                 Shropshire · Worcestershire · West Midlands

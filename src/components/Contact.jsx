@@ -89,10 +89,10 @@ export default function Contact() {
             <p className="mt-8 font-sans text-cream/40 text-sm">
               Or email us directly:{" "}
               <a
-                href="mailto:morgan@clearstoneproperty.co.uk"
+                href="mailto:clara@clearstoneproperty.co.uk"
                 className="text-clay hover:underline"
               >
-                morgan@clearstoneproperty.co.uk
+                clara@clearstoneproperty.co.uk
               </a>
             </p>
           </div>
