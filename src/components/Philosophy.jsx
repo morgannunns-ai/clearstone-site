@@ -63,10 +63,7 @@ export default function Philosophy() {
             <p className="font-mono text-white/60 text-xs uppercase tracking-widest mb-6">
               The Clearstone way
             </p>
-            <h3
-              className="font-serif italic text-white leading-snug mb-6"
-              style={{ fontSize: "clamp(1.6rem, 2.8vw, 2.2rem)" }}
-            >
+            <h3 className="font-sans font-700 italic text-white text-2xl leading-snug mb-6">
               One conversation. A clear offer. A certain completion.
             </h3>
             <p className="font-sans text-white/70 leading-relaxed text-sm">

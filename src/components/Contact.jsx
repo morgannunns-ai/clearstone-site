@@ -58,11 +58,10 @@ export default function Contact() {
             <p className="font-mono text-clay text-xs uppercase tracking-[0.18em] mb-4">
               Get in touch
             </p>
-            <h2 className="font-sans font-700 text-cream leading-tight mb-6"
-              style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)" }}>
+            <h2 className="font-sans font-700 text-cream text-3xl leading-tight mb-6">
               Tell us about
               <br />
-              <span className="font-serif italic text-clay">the property.</span>
+              <span className="italic text-clay">the property.</span>
             </h2>
             <p className="font-sans text-cream/60 leading-relaxed mb-8">
               The quickest way to find out whether we can help is to send us a short message.
@@ -95,7 +94,7 @@ export default function Contact() {
             {submitted ? (
               <div className="rounded-2xl p-10 border border-clay/20 bg-white flex flex-col items-center text-center gap-4">
                 <CheckCircle size={40} className="text-clay" />
-                <h3 className="font-sans font-700 text-cream text-lg">
+                <h3 className="font-sans font-700 text-cream text-base">
                   Thank you — we'll be in touch shortly.
                 </h3>
                 <p className="font-sans text-cream/55 text-sm leading-relaxed">

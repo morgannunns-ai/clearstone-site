@@ -68,10 +68,9 @@ export default function Features() {
           <p className="font-mono text-clay text-xs uppercase tracking-[0.18em] mb-4">
             Why Clearstone
           </p>
-          <h2 className="font-sans font-700 text-cream leading-tight mb-4"
-            style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)" }}>
+          <h2 className="font-sans font-700 text-cream text-3xl leading-tight mb-4">
             We understand what executors{" "}
-            <span className="font-serif italic text-clay">actually need.</span>
+            <span className="italic text-clay">actually need.</span>
           </h2>
           <p className="font-sans text-cream/60 max-w-xl leading-relaxed">
             Managing an estate is time-consuming and often emotionally difficult.

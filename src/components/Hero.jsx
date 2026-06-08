@@ -57,19 +57,15 @@ export default function Hero() {
           Clearstone Property — Probate Specialists
         </p>
 
-        <h1 className="hero-h1 font-sans font-800 text-cream leading-[1.1] mb-6"
-          style={{ fontSize: "clamp(2.6rem, 6vw, 5.2rem)" }}
-        >
+        <h1 className="hero-h1 font-sans font-800 text-cream text-4xl md:text-5xl leading-[1.1] mb-6">
           A certain outcome for
           <br />
-          <span className="font-serif italic text-clay" style={{ fontSize: "1.05em" }}>
+          <span className="italic text-clay">
             every probate property.
           </span>
         </h1>
 
-        <p className="hero-sub font-sans text-cream/65 max-w-xl mb-10 leading-relaxed"
-          style={{ fontSize: "clamp(1rem, 1.5vw, 1.15rem)" }}
-        >
+        <p className="hero-sub font-sans text-cream/65 text-base max-w-xl mb-10 leading-relaxed">
           We work with executors, solicitors, and estate agents to provide a clear,
           guaranteed outcome. No chain. No delays. A fair price and a clean process —
           from first conversation to completion.

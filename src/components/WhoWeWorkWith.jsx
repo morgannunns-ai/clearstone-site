@@ -47,10 +47,9 @@ export default function WhoWeWorkWith() {
           <p className="font-mono text-clay text-xs uppercase tracking-[0.18em] mb-4">
             Who we work with
           </p>
-          <h2 className="font-sans font-700 text-cream leading-tight mb-4"
-            style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)" }}>
+          <h2 className="font-sans font-700 text-cream text-3xl leading-tight mb-4">
             Executors, solicitors,{" "}
-            <span className="font-serif italic text-clay">and estate agents.</span>
+            <span className="italic text-clay">and estate agents.</span>
           </h2>
           <p className="font-sans text-cream/60 max-w-xl leading-relaxed">
             We work directly with all three. If you are managing a probate property
@@ -67,7 +66,7 @@ export default function WhoWeWorkWith() {
               <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-6 bg-clay/10 group-hover:bg-clay/20 transition-colors duration-300">
                 <Icon size={18} className="text-clay" />
               </div>
-              <h3 className="font-sans font-700 text-cream text-lg mb-3">{title}</h3>
+              <h3 className="font-sans font-700 text-cream text-base mb-3">{title}</h3>
               <p className="font-sans text-cream/60 text-sm leading-relaxed">{body}</p>
             </div>
           ))}

@@ -55,10 +55,9 @@ export default function Protocol() {
           <p className="font-mono text-clay text-xs uppercase tracking-[0.18em] mb-4">
             The process
           </p>
-          <h2 className="font-sans font-700 text-cream leading-tight"
-            style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)" }}>
+          <h2 className="font-sans font-700 text-cream text-3xl leading-tight">
             Simple. Transparent.{" "}
-            <span className="font-serif italic text-clay">Certain.</span>
+            <span className="italic text-clay">Certain.</span>
           </h2>
         </div>
 
@@ -70,8 +69,7 @@ export default function Protocol() {
               className="rounded-2xl p-8 md:p-10 bg-white border border-clay/10 transition-all duration-300 hover:border-clay/25 flex flex-col md:flex-row gap-8 items-start"
             >
               <div className="shrink-0 flex md:flex-col gap-4 md:gap-3 items-center md:items-start">
-                <span className="font-mono text-clay/25 leading-none"
-                  style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)" }}>
+                <span className="font-sans font-700 text-clay/20 text-5xl leading-none">
                   {num}
                 </span>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-clay/10">
@@ -79,7 +77,7 @@ export default function Protocol() {
                 </div>
               </div>
               <div>
-                <h3 className="font-sans font-700 text-cream text-xl mb-3">{title}</h3>
+                <h3 className="font-sans font-700 text-cream text-lg mb-3">{title}</h3>
                 <p className="font-sans text-cream/60 leading-relaxed">{body}</p>
               </div>
             </div>
