@@ -36,7 +36,7 @@ export default function Hero() {
         className="absolute inset-0 z-0"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=2000&q=80')",
+            "url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=2000&q=80')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
