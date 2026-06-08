@@ -27,11 +27,9 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
         padding: scrolled ? "12px 32px" : "20px 32px",
-        background: scrolled
-          ? "rgba(12,28,27,0.85)"
-          : "transparent",
+        background: scrolled ? "rgba(243,247,246,0.92)" : "transparent",
         backdropFilter: scrolled ? "blur(20px)" : "none",
-        borderBottom: scrolled ? "1px solid rgba(59,191,184,0.15)" : "none",
+        borderBottom: scrolled ? "1px solid rgba(44,95,93,0.12)" : "none",
       }}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between">
@@ -44,7 +42,7 @@ export default function Navbar() {
           <span className="font-sans font-700 text-cream text-base tracking-tight">
             Clearstone Property
           </span>
-          <span className="font-mono text-clay text-[10px] uppercase tracking-widest opacity-80">
+          <span className="font-mono text-clay text-[10px] uppercase tracking-widest opacity-70">
             Probate Specialists
           </span>
         </a>
@@ -55,7 +53,7 @@ export default function Navbar() {
             <button
               key={l.href}
               onClick={() => handleNav(l.href)}
-              className="font-sans text-sm text-cream/60 hover:text-cream transition-colors duration-200 cursor-pointer bg-transparent border-none"
+              className="font-sans text-sm text-cream/60 hover:text-clay transition-colors duration-200 cursor-pointer bg-transparent border-none"
             >
               {l.label}
             </button>
@@ -66,14 +64,14 @@ export default function Navbar() {
         <a
           href="#contact"
           onClick={(e) => { e.preventDefault(); handleNav("#contact"); }}
-          className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-clay text-charcoal font-sans font-600 text-sm rounded-full transition-all duration-300 hover:scale-[1.03] active:scale-[0.97]"
+          className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-clay text-white font-sans font-600 text-sm rounded-full transition-all duration-300 hover:scale-[1.03] active:scale-[0.97]"
         >
           Speak to us
         </a>
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-cream/70 hover:text-cream transition-colors"
+          className="md:hidden text-cream/70 hover:text-clay transition-colors"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -83,12 +81,12 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-charcoal/95 backdrop-blur-xl border-b border-clay/10 px-6 py-6 flex flex-col gap-4">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-charcoal border-b border-clay/10 px-6 py-6 flex flex-col gap-4 shadow-lg">
           {links.map((l) => (
             <button
               key={l.href}
               onClick={() => handleNav(l.href)}
-              className="text-left font-sans text-sm text-cream/70 hover:text-cream transition-colors bg-transparent border-none cursor-pointer"
+              className="text-left font-sans text-sm text-cream/70 hover:text-clay transition-colors bg-transparent border-none cursor-pointer"
             >
               {l.label}
             </button>
@@ -96,7 +94,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={(e) => { e.preventDefault(); handleNav("#contact"); }}
-            className="mt-2 inline-flex justify-center px-5 py-3 bg-clay text-charcoal font-sans font-600 text-sm rounded-full"
+            className="mt-2 inline-flex justify-center px-5 py-3 bg-clay text-white font-sans font-600 text-sm rounded-full"
           >
             Speak to us
           </a>

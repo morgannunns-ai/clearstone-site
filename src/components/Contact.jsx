@@ -41,18 +41,16 @@ export default function Contact() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-    } catch (_) {
-      // Submit regardless — show success
-    }
+    } catch (_) {}
     setLoading(false);
     setSubmitted(true);
   };
 
   const inputClass =
-    "w-full px-4 py-3 rounded-xl border border-cream/10 bg-charcoal/60 text-cream placeholder-cream/30 font-sans text-sm focus:outline-none focus:border-clay/50 transition-colors duration-200";
+    "w-full px-4 py-3 rounded-xl border border-clay/15 bg-white text-cream placeholder-cream/35 font-sans text-sm focus:outline-none focus:border-clay/50 transition-colors duration-200";
 
   return (
-    <section id="contact" ref={ref} className="py-28 px-6 md:px-10">
+    <section id="contact" ref={ref} className="py-28 px-6 md:px-10 bg-charcoal">
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           {/* Left */}
@@ -60,15 +58,13 @@ export default function Contact() {
             <p className="font-mono text-clay text-xs uppercase tracking-[0.18em] mb-4">
               Get in touch
             </p>
-            <h2
-              className="font-sans font-700 text-cream leading-tight mb-6"
-              style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)" }}
-            >
+            <h2 className="font-sans font-700 text-cream leading-tight mb-6"
+              style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)" }}>
               Tell us about
               <br />
               <span className="font-serif italic text-clay">the property.</span>
             </h2>
-            <p className="font-sans text-cream/55 leading-relaxed mb-8">
+            <p className="font-sans text-cream/60 leading-relaxed mb-8">
               The quickest way to find out whether we can help is to send us a short message.
               We respond to all enquiries promptly and will not pass your details to anyone else.
             </p>
@@ -81,17 +77,14 @@ export default function Contact() {
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 rounded-full bg-clay mt-2.5 shrink-0" />
-                  <p className="font-sans text-cream/50 text-sm leading-relaxed">{item}</p>
+                  <p className="font-sans text-cream/55 text-sm leading-relaxed">{item}</p>
                 </div>
               ))}
             </div>
 
-            <p className="mt-8 font-sans text-cream/40 text-sm">
+            <p className="mt-8 font-sans text-cream/45 text-sm">
               Or email us directly:{" "}
-              <a
-                href="mailto:clara@clearstoneproperty.co.uk"
-                className="text-clay hover:underline"
-              >
+              <a href="mailto:clara@clearstoneproperty.co.uk" className="text-clay hover:underline">
                 clara@clearstoneproperty.co.uk
               </a>
             </p>
@@ -100,15 +93,12 @@ export default function Contact() {
           {/* Right — form */}
           <div className="contact-form-wrap">
             {submitted ? (
-              <div
-                className="rounded-2xl p-10 border border-clay/20 flex flex-col items-center text-center gap-4"
-                style={{ background: "rgba(22,46,44,0.5)" }}
-              >
+              <div className="rounded-2xl p-10 border border-clay/20 bg-white flex flex-col items-center text-center gap-4">
                 <CheckCircle size={40} className="text-clay" />
                 <h3 className="font-sans font-700 text-cream text-lg">
                   Thank you — we'll be in touch shortly.
                 </h3>
-                <p className="font-sans text-cream/50 text-sm leading-relaxed">
+                <p className="font-sans text-cream/55 text-sm leading-relaxed">
                   We typically respond within one business day. If your matter is urgent,
                   please email us directly.
                 </p>
@@ -116,34 +106,12 @@ export default function Contact() {
             ) : (
               <form
                 onSubmit={handleSubmit}
-                className="rounded-2xl p-8 border border-cream/8 space-y-4"
-                style={{ background: "rgba(22,46,44,0.4)" }}
+                className="rounded-2xl p-8 border border-clay/10 bg-white space-y-4"
               >
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your name"
-                  required
-                  className={inputClass}
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email address"
-                  required
-                  className={inputClass}
-                />
-                <input
-                  type="text"
-                  name="property"
-                  placeholder="Property address (if known)"
-                  className={inputClass}
-                />
-                <select
-                  name="role"
-                  defaultValue=""
-                  className={inputClass + " appearance-none cursor-pointer"}
-                >
+                <input type="text" name="name" placeholder="Your name" required className={inputClass} />
+                <input type="email" name="email" placeholder="Email address" required className={inputClass} />
+                <input type="text" name="property" placeholder="Property address (if known)" className={inputClass} />
+                <select name="role" defaultValue="" className={inputClass + " appearance-none cursor-pointer"}>
                   <option value="" disabled>Your role</option>
                   <option value="executor">Executor</option>
                   <option value="solicitor">Solicitor</option>
@@ -159,16 +127,11 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-clay text-charcoal font-sans font-700 text-sm rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.97] disabled:opacity-60 disabled:cursor-not-allowed"
+                  className="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-clay text-white font-sans font-700 text-sm rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.97] disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  {loading ? "Sending…" : (
-                    <>
-                      Send enquiry
-                      <Send size={14} />
-                    </>
-                  )}
+                  {loading ? "Sending…" : <><Send size={14} /> Send enquiry</>}
                 </button>
-                <p className="font-sans text-cream/25 text-xs text-center">
+                <p className="font-sans text-cream/35 text-xs text-center">
                   No obligation. Your details stay private.
                 </p>
               </form>
