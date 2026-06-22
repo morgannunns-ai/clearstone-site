@@ -54,7 +54,7 @@ export default function WhoWeWorkWith() {
             style={{ background: "#2C5F5D" }}>
             Get in touch
           </a>
-          <span className="ml-4 text-sm" style={{ color: "#6a8c8a" }}>We cover Shropshire, Worcestershire, and the wider West Midlands.</span>
+          <span className="ml-4 text-sm" style={{ color: "#6a8c8a" }}>We cover Shropshire, Wrexham, and the wider West Midlands.</span>
         </div>
       </div>
     </section>

@@ -44,7 +44,7 @@ export default function Footer() {
               clara@clearstoneproperty.co.uk
             </a>
             <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.25)" }}>
-              Shropshire · Worcestershire<br />West Midlands
+              Shropshire · Wrexham<br />West Midlands
             </p>
           </div>
         </div>
