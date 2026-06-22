@@ -57,7 +57,7 @@ export default function Contact() {
             {/* Clara mini card */}
             <div style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 20px", background: "#F7F9F8", borderRadius: 16, border: "1.5px solid #E2EAE8", marginBottom: 28 }}>
               <div style={{ width: 52, height: 52, borderRadius: "50%", overflow: "hidden", flexShrink: 0 }}>
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80" alt="Clara"
+                <img src="/images/team/clara.png" alt="Clara"
                   style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
               </div>
               <div>

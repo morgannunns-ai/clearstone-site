@@ -26,7 +26,7 @@ export default function ClaraSection() {
           {/* Portrait */}
           <div className="clara-img hidden md:block" style={{ position: "relative", flexShrink: 0 }}>
             <div style={{ width: 300, height: 380, borderRadius: 24, overflow: "hidden", boxShadow: "0 24px 64px rgba(0,0,0,0.3)" }}>
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80"
+              <img src="/images/team/clara.png"
                 alt="Clara — Property Solutions Specialist"
                 style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
             </div>

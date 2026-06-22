@@ -68,7 +68,7 @@ export default function Hero() {
             </div>
             {/* Clara portrait */}
             <div style={{ position: "relative", zIndex: 2, marginTop: 40, width: 280, height: 360, borderRadius: 20, overflow: "hidden", boxShadow: "0 24px 64px rgba(27,43,75,0.15)" }}>
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80"
+              <img src="/images/team/clara.png"
                 alt="Clara — Property Solutions Specialist" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
               <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 20px 20px", background: "linear-gradient(to top, rgba(27,43,75,0.85) 0%, transparent 100%)" }}>
                 <div style={{ color: "white", fontWeight: 700, fontSize: "1rem" }}>Clara</div>
