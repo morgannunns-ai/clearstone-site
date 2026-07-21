@@ -18,7 +18,7 @@ const EXAMPLES = [
     note: "The trade is timing: you are paid on completion, usually six to twelve months later.",
   },
   {
-    structure: "Lease option",
+    structure: "Flexible structure",
     title: "Some money now, an income after that",
     body: "Not everyone wants one lump sum. Here the owner releases an agreed amount up front — say £10,000 — and hands over the running of the house completely. We cover the mortgage, the maintenance and the management from day one, pay a fixed sum each month on top, and buy the property outright at a price and on a date both sides agree at the outset.",
     note: "Suits owners who do not need all the money now and would rather keep an income from the property.",

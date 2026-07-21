@@ -20,7 +20,7 @@ const SOLUTIONS = [
   },
   {
     icon: Coins,
-    title: "Lease option",
+    title: "Flexible structure",
     subtitle: "When an income beats a lump sum",
     body: "You release an agreed amount now and hand over the running of the property. We cover the mortgage, maintenance and management, pay you monthly on top, and buy at a price and date agreed at the outset.",
   },
