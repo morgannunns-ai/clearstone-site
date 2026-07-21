@@ -8,7 +8,7 @@ const STEPS = [
   {
     num: "01",
     title: "Tell us about the property",
-    body: "Use the form below or email Clara, our first point of contact. The address, the condition, and what you're trying to achieve. Rough detail is fine to start with, and you'll get a reply within one business day.",
+    body: "Use the form below or email Clara, your point of contact from day one. The address, the condition, and what you're trying to achieve. Rough detail is fine to start with, and you'll get a reply within one business day.",
   },
   {
     num: "02",
@@ -18,7 +18,7 @@ const STEPS = [
   {
     num: "03",
     title: "You decide in your own time",
-    body: "If you want to go ahead, solicitors are instructed and we agree the timetable together. If not, that's fine. There are no fees either way.",
+    body: "If you want to go ahead, solicitors are instructed and we agree the timetable together, with Clara keeping you posted at every stage. If not, that's fine. There are no fees either way.",
   },
 ];
 

@@ -51,14 +51,19 @@ export default function Contact() {
               Tell us about the property
             </h2>
             <p style={{ color: "#4A5568", lineHeight: 1.8, marginBottom: 28 }}>
-              The quickest way to find out whether we can help is to tell us what you're dealing with. There's no obligation at any stage.
+              The quickest way to find out whether we can help is to tell us what you're dealing with. From your first message, Clara will look after your enquiry, and there's no obligation at any stage.
             </p>
 
             {/* Contact card */}
-            <div style={{ padding: "16px 20px", background: "#F7F9F8", borderRadius: 16, border: "1.5px solid #E2EAE8", marginBottom: 28 }}>
-              <div style={{ fontWeight: 700, fontSize: "0.9rem", color: "#1B2B4B" }}>Clara</div>
-              <div style={{ fontSize: "0.8rem", color: "#6B7280" }}>First point of contact</div>
-              <div style={{ fontSize: "0.78rem", color: "#6B8F6B", fontWeight: 600, marginTop: 2 }}>Replies within one business day</div>
+            <div style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 20px", background: "#F7F9F8", borderRadius: 16, border: "1.5px solid #E2EAE8", marginBottom: 28 }}>
+              <div style={{ width: 46, height: 46, borderRadius: "50%", background: "linear-gradient(135deg, #B8892A 0%, #8F6A1F 100%)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                <span style={{ color: "white", fontWeight: 800, fontSize: "1.1rem" }}>C</span>
+              </div>
+              <div>
+                <div style={{ fontWeight: 700, fontSize: "0.9rem", color: "#1B2B4B" }}>Clara</div>
+                <div style={{ fontSize: "0.8rem", color: "#6B7280" }}>Your personal point of contact, throughout</div>
+                <div style={{ fontSize: "0.78rem", color: "#6B8F6B", fontWeight: 600, marginTop: 2 }}>Replies within one business day</div>
+              </div>
             </div>
 
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>

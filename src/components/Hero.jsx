@@ -81,7 +81,7 @@ export default function Hero() {
                 ))}
               </div>
               <div style={{ marginTop: 22, paddingTop: 18, borderTop: "1px solid rgba(255,255,255,0.12)", fontSize: "0.82rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.6 }}>
-                First contact is Clara:<br />
+                Clara, your personal point of contact:<br />
                 <a href="mailto:clara@clearstoneproperty.co.uk" style={{ color: "rgba(255,255,255,0.85)", fontWeight: 600, textDecoration: "none" }}>
                   clara@clearstoneproperty.co.uk
                 </a>
