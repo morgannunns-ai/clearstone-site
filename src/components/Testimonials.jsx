@@ -6,19 +6,22 @@ gsap.registerPlugin(ScrollTrigger);
 
 const EXAMPLES = [
   {
-    structure: "Direct purchase",
-    title: "A three-bed semi needing full refurbishment",
-    body: "Worth around £200,000 done up, but needing roughly £40,000 of work nobody wants to take on. We offer £140,000 with the works priced item by item, no chain, and completion in a matter of weeks.",
+    structure: "Cash purchase",
+    title: "Paid in weeks, not months",
+    body: "A three-bed semi worth around £200,000 once it has been brought up to standard, needing roughly £25,000 of work. We start from that finished value, take off the works and our own buying, holding and selling costs, and offer a share of what is left — here, in the region of £115,000, completing four to five weeks from the day solicitors are instructed.",
+    note: "Less than a finished house would fetch. That difference is what buys the speed and the certainty.",
   },
   {
     structure: "Assisted sale",
-    title: "A dated bungalow worth more improved",
-    body: "Worth around £190,000 as it stands, or £240,000 after £25,000 of updating. We fund and manage the work, the bungalow sells on the open market, and the owner receives the sale price minus the costs agreed in writing before work started.",
+    title: "A higher figure, agreed now, paid later",
+    body: "The same £200,000 finished value, the same £25,000 of work — but instead of buying it outright we agree your figure up front and fix it: £140,000 in this example, whatever the house eventually sells for. Contracts exchange in about four to five weeks, and from that point the works, the bills and the sale are ours to deal with, not yours.",
+    note: "The trade is timing: you are paid on completion, usually six to twelve months later.",
   },
   {
-    structure: "Delayed completion",
-    title: "A probate terrace that needs time",
-    body: "The estate wants certainty, but probate and house clearance take months. The sale is agreed early with completion set well ahead, so the executors know where they stand while everything else takes its course.",
+    structure: "Lease option",
+    title: "Some money now, an income after that",
+    body: "Not everyone wants one lump sum. Here the owner releases an agreed amount up front — say £10,000 — and hands over the running of the house completely. We cover the mortgage, the maintenance and the management from day one, pay a fixed sum each month on top, and buy the property outright at a price and on a date both sides agree at the outset.",
+    note: "Suits owners who do not need all the money now and would rather keep an income from the property.",
   },
 ];
 
@@ -47,7 +50,7 @@ export default function Testimonials() {
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
-          {EXAMPLES.map(({ structure, title, body }) => (
+          {EXAMPLES.map(({ structure, title, body, note }) => (
             <div key={title} className="test-card" style={{
               padding: "32px",
               borderRadius: 20,
@@ -62,6 +65,7 @@ export default function Testimonials() {
               </div>
               <h3 style={{ fontWeight: 700, fontSize: "1rem", color: "#1B2B4B", lineHeight: 1.4 }}>{title}</h3>
               <p style={{ fontSize: "0.9rem", color: "#4A5568", lineHeight: 1.8, flex: 1 }}>{body}</p>
+              <p style={{ fontSize: "0.85rem", color: "#1B2B4B", lineHeight: 1.65, fontWeight: 600 }}>{note}</p>
               <div style={{ paddingTop: 12, borderTop: "1px solid #E2EAE8" }}>
                 <span style={{ fontSize: "0.76rem", color: "#94A3B0", fontWeight: 500 }}>Illustrative example</span>
               </div>

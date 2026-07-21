@@ -1,28 +1,28 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { TrendingUp, Wrench, Zap, Compass } from "lucide-react";
+import { TrendingUp, Wrench, Zap, Coins } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const SOLUTIONS = [
   {
     icon: Zap,
-    title: "Direct purchase",
+    title: "Cash purchase",
     subtitle: "When speed and certainty matter most",
-    body: "We buy the property ourselves, with no chain behind us. The price reflects the condition and the certainty, and we show you how we calculated it, including what we've allowed for any works.",
-  },
-  {
-    icon: Compass,
-    title: "Purchase with delayed completion",
-    subtitle: "Certainty now, completion when it suits",
-    body: "We exchange contracts early so the sale is secure, then set completion for a date that fits your circumstances. Useful in probate, or when you need time to sort out what comes next.",
+    body: "We buy it ourselves, with no chain behind us, usually completing four to five weeks from instructing solicitors. If a later date suits you better we exchange now and complete when you're ready. We show you how the figure was calculated, works included.",
   },
   {
     icon: Wrench,
     title: "Assisted sale",
-    subtitle: "When the right works would add real value",
-    body: "We fund and manage the refurbishment, then the property sells on the open market. You receive the uplifted price minus costs agreed in writing before any work starts. It has to stack up for both sides, so it suits some properties and not others.",
+    subtitle: "A higher figure, if you can wait for it",
+    body: "We agree your price up front and fix it, then fund and manage the works and the sale. Contracts exchange in weeks and the property stops being your responsibility, but you're paid on completion, typically six to twelve months later.",
+  },
+  {
+    icon: Coins,
+    title: "Lease option",
+    subtitle: "When an income beats a lump sum",
+    body: "You release an agreed amount now and hand over the running of the property. We cover the mortgage, maintenance and management, pay you monthly on top, and buy at a price and date agreed at the outset.",
   },
   {
     icon: TrendingUp,
