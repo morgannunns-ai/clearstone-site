@@ -22,7 +22,7 @@ const SOLUTIONS = [
     icon: Wrench,
     title: "Assisted sale",
     subtitle: "When the right works would add real value",
-    body: "We fund and manage the refurbishment, then the property sells on the open market. You receive the uplifted price minus the costs agreed in writing before any work starts. The numbers have to stack up for both sides, so this suits some properties and not others.",
+    body: "We fund and manage the refurbishment, then the property sells on the open market. You receive the uplifted price minus costs agreed in writing before any work starts. It has to stack up for both sides, so it suits some properties and not others.",
   },
   {
     icon: TrendingUp,
@@ -58,23 +58,25 @@ export default function Solutions() {
           </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 20 }}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" style={{ gap: 16 }}>
           {SOLUTIONS.map(({ icon: Icon, title, subtitle, body }) => (
             <div key={title} className="sol-card" style={{
-              padding: "32px",
+              padding: "26px 24px",
               borderRadius: 20,
               background: "white",
               border: "1.5px solid #E2EAE8",
+              display: "flex",
+              flexDirection: "column",
               transition: "box-shadow 0.25s, border-color 0.25s",
             }}
               onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 12px 40px rgba(27,43,75,0.09)"; e.currentTarget.style.borderColor = "#B8892A40"; }}
               onMouseLeave={e => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.borderColor = "#E2EAE8"; }}>
-              <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(27,43,75,0.07)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 20 }}>
-                <Icon size={20} style={{ color: "#1B2B4B" }} />
+              <div style={{ width: 40, height: 40, borderRadius: 12, background: "rgba(27,43,75,0.07)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
+                <Icon size={19} style={{ color: "#1B2B4B" }} />
               </div>
-              <h3 style={{ fontWeight: 700, fontSize: "1.05rem", color: "#1B2B4B", marginBottom: 4 }}>{title}</h3>
-              <p style={{ fontSize: "0.8rem", fontWeight: 600, color: "#B8892A", marginBottom: 14, letterSpacing: "0.01em" }}>{subtitle}</p>
-              <p style={{ fontSize: "0.9rem", color: "#4A5568", lineHeight: 1.75 }}>{body}</p>
+              <h3 style={{ fontWeight: 700, fontSize: "1rem", color: "#1B2B4B", marginBottom: 4, lineHeight: 1.3 }}>{title}</h3>
+              <p style={{ fontSize: "0.78rem", fontWeight: 600, color: "#B8892A", marginBottom: 12, letterSpacing: "0.01em", lineHeight: 1.45 }}>{subtitle}</p>
+              <p style={{ fontSize: "0.87rem", color: "#4A5568", lineHeight: 1.7 }}>{body}</p>
             </div>
           ))}
         </div>
