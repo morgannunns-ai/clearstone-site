@@ -7,28 +7,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SOLUTIONS = [
   {
-    icon: TrendingUp,
-    title: "Sell Traditionally",
-    subtitle: "Best for properties ready for the open market",
-    body: "For well-presented properties in good condition, a traditional estate agency sale often achieves the best price. We can guide you through the process or refer you to the right agent for your area.",
-  },
-  {
-    icon: Wrench,
-    title: "Assisted Sale",
-    subtitle: "Ideal when improvements could significantly increase value",
-    body: "We manage the refurbishment or preparation process, funding improvements and marketing the property for sale. The estate or owner receives the uplifted sale price minus agreed costs.",
-  },
-  {
     icon: Zap,
-    title: "Investor Purchase",
-    subtitle: "For speed and certainty above all else",
-    body: "We purchase directly, without a chain and without delays. The price reflects the condition and circumstances, but the process is fast, certain, and handled with care.",
+    title: "Direct purchase",
+    subtitle: "When speed and certainty matter most",
+    body: "We buy the property ourselves, with no chain behind us. The price reflects the condition and the certainty, and we show you how we calculated it, including what we've allowed for any works.",
   },
   {
     icon: Compass,
-    title: "Tailored Strategy",
-    subtitle: "For unusual or complex circumstances",
-    body: "Some situations do not fit a standard template. We take time to understand the full picture and design a strategy that fits — whether that involves a combination of approaches or something less conventional.",
+    title: "Purchase with delayed completion",
+    subtitle: "Certainty now, completion when it suits",
+    body: "We exchange contracts early so the sale is secure, then set completion for a date that fits your circumstances. Useful in probate, or when you need time to sort out what comes next.",
+  },
+  {
+    icon: Wrench,
+    title: "Assisted sale",
+    subtitle: "When the right works would add real value",
+    body: "We fund and manage the refurbishment, then the property sells on the open market. You receive the uplifted price minus the costs agreed in writing before any work starts. The numbers have to stack up for both sides, so this suits some properties and not others.",
+  },
+  {
+    icon: TrendingUp,
+    title: "An estate agent instead",
+    subtitle: "When the open market will beat our offer",
+    body: "A well-presented house in a strong area will usually do better with a good local agent than with us. When that's the honest answer, we'll say so.",
   },
 ];
 
@@ -49,12 +49,12 @@ export default function Solutions() {
     <section id="solutions" ref={ref} style={{ padding: "96px 32px", background: "#F7F9F8" }}>
       <div style={{ maxWidth: 1000, margin: "0 auto" }}>
         <div className="sol-head" style={{ marginBottom: 52 }}>
-          <p style={{ fontSize: "0.78rem", fontWeight: 700, color: "#B8892A", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>Pathways Forward</p>
+          <p style={{ fontSize: "0.78rem", fontWeight: 700, color: "#B8892A", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>What we offer</p>
           <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 800, color: "#1B2B4B", lineHeight: 1.2, letterSpacing: "-0.02em", maxWidth: 520 }}>
-            Solutions Built Around Your Situation
+            Four ways a sale can work
           </h2>
           <p style={{ marginTop: 16, color: "#4A5568", maxWidth: 500, lineHeight: 1.75 }}>
-            There is rarely a one-size-fits-all answer. We help you identify which route makes the most sense for your circumstances.
+            Which one fits depends on the property, the numbers and your timescale. We'll tell you which we'd recommend and why.
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function Solutions() {
             style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "13px 28px", background: "#1B2B4B", color: "white", borderRadius: 50, fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", transition: "opacity 0.2s" }}
             onMouseEnter={e => e.currentTarget.style.opacity = "0.88"}
             onMouseLeave={e => e.currentTarget.style.opacity = "1"}>
-            Discuss Your Situation
+            Ask which would fit your situation
           </a>
         </div>
       </div>

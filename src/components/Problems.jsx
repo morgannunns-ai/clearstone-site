@@ -6,28 +6,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PROBLEMS = [
   {
-    title: "Probate Property",
-    body: "Managing a property as part of an estate is often stressful and time-sensitive. We help executors understand their options and reach a clear outcome.",
+    title: "Probate property",
+    body: "Executors often need certainty the open market can't promise. We buy without a chain, and completion can be timed around probate rather than against it.",
   },
   {
-    title: "Inherited Homes",
-    body: "Inheriting a property brings its own complications — emotional, practical, and financial. We help you work through the options without pressure.",
+    title: "Inherited homes",
+    body: "An inherited house often needs money spending on it before an agent can sell it well. We buy as it stands, or fund the work through an assisted sale.",
   },
   {
-    title: "Empty Properties",
-    body: "An empty property costs money and carries risk. Whether you want to sell, let, or refurbish, we can help you find the right path forward.",
+    title: "Empty properties",
+    body: "Insurance, council tax, deterioration. An empty house gets more expensive the longer it sits, and we can usually move quickly.",
   },
   {
-    title: "Properties Needing Refurbishment",
-    body: "Some properties struggle to sell in their current condition. We can advise whether refurbishment would add value, or whether a different route makes more sense.",
+    title: "Properties needing work",
+    body: "We price the works into our offers item by item, so you can see exactly how we arrived at the figure rather than taking a headline number on trust.",
   },
   {
-    title: "Slow or Stalled Sales",
-    body: "If your property has been on the market without result, there is usually a reason. We can help you diagnose the issue and explore the alternatives.",
+    title: "Stalled sales",
+    body: "Months on the market, viewings but no offers, or a chain that fell through at the last minute. A direct sale takes the uncertainty out.",
   },
   {
-    title: "Complex Situations",
-    body: "Divorce, debt, disputed ownership, unusual properties — sometimes situations do not fit neatly into any category. We work through complexity rather than away from it.",
+    title: "Complicated circumstances",
+    body: "Divorce, debt, a short lease, tenants in place. Tell us the situation as it actually is and we'll give you a straight answer on whether we can help.",
   },
 ];
 
@@ -43,15 +43,15 @@ export default function Problems() {
   }, []);
 
   return (
-    <section ref={ref} style={{ padding: "96px 32px", background: "white" }}>
+    <section id="situations" ref={ref} style={{ padding: "96px 32px", background: "white" }}>
       <div style={{ maxWidth: 1000, margin: "0 auto" }}>
         <div className="prob-head" style={{ marginBottom: 52 }}>
-          <p style={{ fontSize: "0.78rem", fontWeight: 700, color: "#B8892A", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>Situations We Help With</p>
+          <p style={{ fontSize: "0.78rem", fontWeight: 700, color: "#B8892A", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>Situations we work with</p>
           <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 800, color: "#1B2B4B", lineHeight: 1.2, letterSpacing: "-0.02em", maxWidth: 560 }}>
-            Not Every Property Situation Is Straightforward
+            Not every sale is straightforward
           </h2>
           <p style={{ marginTop: 16, color: "#4A5568", maxWidth: 520, lineHeight: 1.75 }}>
-            We work with homeowners and families in a range of situations that fall outside the typical estate agency process.
+            Most of the properties we buy fall into one of these categories. If yours doesn't, ask anyway. The first conversation costs nothing.
           </p>
         </div>
 

@@ -1,9 +1,9 @@
 const SIGNALS = [
-  "Property Specialists",
-  "Probate Support",
-  "Local Knowledge",
-  "Professional Guidance",
-  "Tailored Solutions",
+  "Direct buyers, no chain",
+  "Offers in writing",
+  "Probate experience",
+  "No seller fees",
+  "Shropshire based",
 ];
 
 export default function TrustBar() {

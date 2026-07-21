@@ -7,18 +7,18 @@ gsap.registerPlugin(ScrollTrigger);
 const STEPS = [
   {
     num: "01",
-    title: "Speak With Clara",
-    body: "A short, confidential conversation about your situation. No commitment required. Clara listens carefully and asks the right questions to understand what you actually need.",
+    title: "Tell us about the property",
+    body: "Use the form below or email Clara, our first point of contact. The address, the condition, and what you're trying to achieve. Rough detail is fine to start with, and you'll get a reply within one business day.",
   },
   {
     num: "02",
-    title: "Review Your Options",
-    body: "Clara sets out the realistic options available to you — clearly and honestly. You will understand exactly what each route involves, what it costs, and what it means for you.",
+    title: "We work up the numbers",
+    body: "We research the property and the local market, price any works needed, and put our offer in writing with the figures shown, not just a headline number.",
   },
   {
     num: "03",
-    title: "Move Forward Confidently",
-    body: "Once you have decided on the right path, we handle the process. You will always know what is happening and why. We manage the complexity so you do not have to.",
+    title: "You decide in your own time",
+    body: "If you want to go ahead, solicitors are instructed and we agree the timetable together. If not, that's fine. There are no fees either way.",
   },
 ];
 
@@ -37,9 +37,9 @@ export default function HowItWorks() {
     <section id="how-it-works" ref={ref} style={{ padding: "96px 32px", background: "white" }}>
       <div style={{ maxWidth: 1000, margin: "0 auto" }}>
         <div className="hiw-head" style={{ marginBottom: 60, textAlign: "center" }}>
-          <p style={{ fontSize: "0.78rem", fontWeight: 700, color: "#B8892A", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>The Process</p>
+          <p style={{ fontSize: "0.78rem", fontWeight: 700, color: "#B8892A", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 12 }}>The process</p>
           <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 800, color: "#1B2B4B", lineHeight: 1.2, letterSpacing: "-0.02em" }}>
-            Simple. Clear. Straightforward.
+            What happens when you get in touch
           </h2>
         </div>
 

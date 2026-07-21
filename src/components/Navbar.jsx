@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const LINKS = [
-  { label: "How It Works",  href: "#how-it-works" },
-  { label: "Solutions",     href: "#solutions" },
-  { label: "The Team",      href: "#team" },
-  { label: "About Clara",   href: "#clara" },
+  { label: "Situations",    href: "#situations" },
+  { label: "What we offer", href: "#solutions" },
+  { label: "How it works",  href: "#how-it-works" },
+  { label: "Example numbers", href: "#examples" },
 ];
 
 export default function Navbar() {
@@ -37,7 +37,7 @@ export default function Navbar() {
             Clearstone Property
           </div>
           <div style={{ fontSize: "0.68rem", color: "#B8892A", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 600, marginTop: 1 }}>
-            Property Solutions
+            Property Buyers
           </div>
         </a>
 
@@ -59,7 +59,7 @@ export default function Navbar() {
           style={{ padding: "10px 22px", background: "#1B2B4B", color: "white", borderRadius: 50, fontSize: "0.88rem", fontWeight: 600, textDecoration: "none", letterSpacing: "-0.01em", transition: "opacity 0.2s" }}
           onMouseEnter={e => e.currentTarget.style.opacity = "0.88"}
           onMouseLeave={e => e.currentTarget.style.opacity = "1"}>
-          Book a Consultation
+          Get in touch
         </a>
 
         {/* Mobile toggle */}
@@ -79,7 +79,7 @@ export default function Navbar() {
           ))}
           <a href="#contact" onClick={(e) => { e.preventDefault(); go("#contact"); }}
             style={{ marginTop: 8, padding: "12px 22px", background: "#1B2B4B", color: "white", borderRadius: 50, fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", textAlign: "center" }}>
-            Book a Consultation
+            Get in touch
           </a>
         </div>
       )}

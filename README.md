@@ -1,6 +1,6 @@
 # Clearstone Property — Public Website
 
-One-page sales site for Clearstone Property, probate property specialists.
+One-page site for Clearstone Property, a Shropshire-based direct property buyer.
 Built with React 19 + Vite 8 + Tailwind CSS v4 + GSAP 3.
 
 ## Tech Stack
@@ -27,60 +27,29 @@ npm run build
 
 Output goes to `dist/`.
 
-## Deploy to Vercel (Recommended)
+## Deploy
 
-### Option A — Import from GitHub (easiest)
-
-1. **Push to GitHub:**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit — Clearstone Property website"
-   gh repo create clearstone-site --public --source=. --push
-   ```
-   Or manually create the repo on github.com, then:
-   ```bash
-   git remote add origin https://github.com/YOUR-USERNAME/clearstone-site.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-2. **Import into Vercel:**
-   - Go to [vercel.com/new](https://vercel.com/new)
-   - Click **Import Git Repository**
-   - Select `clearstone-site`
-   - Vercel auto-detects Vite — no config needed
-   - Click **Deploy** — live in ~30 seconds
-
-3. **Custom domain (optional):**
-   - Vercel dashboard → project → Settings → Domains
-   - Add `clearstoneproperty.co.uk` and follow the DNS instructions
-
-## Color Palette
-
-| Token      | Hex       | Usage                    |
-|------------|-----------|--------------------------|
-| `charcoal` | `#0C1C1B` | Page background          |
-| `clay`     | `#3BBFB8` | Accent / CTA / headings  |
-| `cream`    | `#EEF3F2` | Body text                |
-| `moss`     | `#162E2C` | Card backgrounds         |
+The repo is imported into Vercel; pushing to `main` deploys to
+`clearstoneproperty.co.uk` automatically.
 
 ## Project Structure
 
 ```
 src/
 ├── App.jsx                    ← Root layout
-├── index.css                  ← Tailwind v4, @theme tokens, noise overlay
+├── index.css                  ← Tailwind v4, @theme tokens
 ├── main.jsx                   ← Entry point
 └── components/
-    ├── Navbar.jsx             ← Floating glassmorphic nav
-    ├── Hero.jsx               ← Full-viewport hero with GSAP text reveal
-    ├── Features.jsx           ← 6 benefit cards (Why Clearstone)
-    ├── Philosophy.jsx         ← Old way vs Clearstone way contrast
-    ├── Protocol.jsx           ← 3-step How It Works
-    ├── WhoWeWorkWith.jsx      ← Executors / Solicitors / Estate agents
+    ├── Navbar.jsx             ← Fixed nav
+    ├── Hero.jsx               ← Headline + what-to-expect card
+    ├── TrustBar.jsx           ← Plain-fact strip
+    ├── Problems.jsx           ← Situations we work with
+    ├── Solutions.jsx          ← Four ways a sale can work
+    ├── HowItWorks.jsx         ← 3-step process
+    ├── ClaraSection.jsx       ← Point of contact
+    ├── Testimonials.jsx       ← Worked examples (illustrative)
     ├── Contact.jsx            ← Enquiry form → clearstoneproperty.co.uk/enquiry
-    └── Footer.jsx             ← Links, contact, status indicator
+    └── Footer.jsx             ← Links + contact
 ```
 
 ## Form Endpoint
