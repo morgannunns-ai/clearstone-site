@@ -56,9 +56,8 @@ export default function Contact() {
 
             {/* Contact card */}
             <div style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 20px", background: "#F7F9F8", borderRadius: 16, border: "1.5px solid #E2EAE8", marginBottom: 28 }}>
-              <div style={{ width: 46, height: 46, borderRadius: "50%", background: "linear-gradient(135deg, #B8892A 0%, #8F6A1F 100%)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                <span style={{ color: "white", fontWeight: 800, fontSize: "1.1rem" }}>C</span>
-              </div>
+              <img src="/clara.jpg" alt="Clara" width={46} height={46} loading="lazy"
+                style={{ width: 46, height: 46, borderRadius: "50%", objectFit: "cover", display: "block", flexShrink: 0, border: "1.5px solid rgba(184,137,42,0.5)" }} />
               <div>
                 <div style={{ fontWeight: 700, fontSize: "0.9rem", color: "#1B2B4B" }}>Clara</div>
                 <div style={{ fontSize: "0.8rem", color: "#6B7280" }}>Your personal point of contact, throughout</div>

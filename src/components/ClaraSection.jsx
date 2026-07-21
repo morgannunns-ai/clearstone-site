@@ -26,9 +26,8 @@ export default function ClaraSection() {
           {/* Contact card */}
           <div className="clara-img hidden md:block" style={{ position: "relative", flexShrink: 0 }}>
             <div style={{ width: 300, borderRadius: 24, background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)", padding: "36px 28px", boxShadow: "0 24px 64px rgba(0,0,0,0.3)" }}>
-              <div style={{ width: 72, height: 72, borderRadius: "50%", background: "linear-gradient(135deg, #B8892A 0%, #8F6A1F 100%)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 20, boxShadow: "0 8px 24px rgba(184,137,42,0.35)" }}>
-                <span style={{ color: "white", fontWeight: 800, fontSize: "1.6rem", letterSpacing: "-0.02em" }}>C</span>
-              </div>
+              <img src="/clara.jpg" alt="Clara" width={84} height={84} loading="lazy"
+                style={{ width: 84, height: 84, borderRadius: "50%", objectFit: "cover", display: "block", marginBottom: 20, border: "2px solid rgba(184,137,42,0.55)", boxShadow: "0 8px 24px rgba(0,0,0,0.28)" }} />
               <div style={{ color: "white", fontWeight: 700, fontSize: "1.15rem", marginBottom: 4 }}>Clara</div>
               <div style={{ color: "#B8892A", fontSize: "0.82rem", fontWeight: 600, marginBottom: 16 }}>Your personal point of contact</div>
               <a href="mailto:clara@clearstoneproperty.co.uk"
