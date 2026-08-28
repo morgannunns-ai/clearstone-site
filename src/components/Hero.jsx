@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="hero-content" style={{ display: "flex", flexDirection: "column", gap: 24, maxWidth: 560 }}>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "6px 14px", background: "rgba(184,137,42,0.10)", borderRadius: 50, width: "fit-content" }}>
               <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#B8892A", display: "inline-block" }} />
-              <span style={{ fontSize: "0.78rem", fontWeight: 600, color: "#B8892A", letterSpacing: "0.08em", textTransform: "uppercase" }}>Shropshire &amp; the West Midlands</span>
+              <span style={{ fontSize: "0.78rem", fontWeight: 600, color: "#B8892A", letterSpacing: "0.08em", textTransform: "uppercase" }}>Direct property buyers</span>
             </div>
 
             <h1 style={{ fontSize: "clamp(2rem, 4vw, 2.8rem)", fontWeight: 800, color: "#1B2B4B", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
@@ -43,7 +43,7 @@ export default function Hero() {
             </h1>
 
             <p style={{ fontSize: "1.05rem", color: "#4A5568", lineHeight: 1.8, maxWidth: 500 }}>
-              Clearstone is a Shropshire-based property buyer. We purchase homes across the West Midlands and surrounding areas: probate properties, houses that need work, sales that have stalled. Every offer comes in writing with the figures set out. And if selling through a local agent would get you more, we will tell you that too.
+              Clearstone is a direct property buyer. We purchase homes in every condition: probate properties, houses that need work, sales that have stalled. Every offer comes in writing with the figures set out. And if selling through a local agent would get you more, we will tell you that too.
             </p>
 
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12, alignItems: "center", paddingTop: 4 }}>

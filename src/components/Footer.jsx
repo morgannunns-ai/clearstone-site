@@ -11,7 +11,7 @@ export default function Footer() {
             <div style={{ fontWeight: 700, fontSize: "1rem", color: "white", marginBottom: 4 }}>Clearstone Property</div>
             <div style={{ fontSize: "0.72rem", color: "#B8892A", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 600, marginBottom: 16 }}>Property Buyers</div>
             <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.45)", lineHeight: 1.75, maxWidth: 300 }}>
-              We buy residential property directly across Shropshire, the West Midlands and surrounding areas: probate sales, houses that need work, and sales that have stalled.
+              We buy residential property directly: probate sales, houses that need work, and sales that have stalled.
             </p>
           </div>
 
@@ -39,15 +39,12 @@ export default function Footer() {
               onMouseLeave={e => e.target.style.color = "rgba(255,255,255,0.45)"}>
               clara@clearstoneproperty.co.uk
             </a>
-            <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.25)" }}>
-              Shropshire · West Midlands<br />and surrounding areas
-            </p>
           </div>
         </div>
 
         <div style={{ paddingTop: 28, borderTop: "1px solid rgba(255,255,255,0.07)", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
           <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.2)" }}>© {new Date().getFullYear()} Clearstone Property. All rights reserved.</p>
-          <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.2)" }}>Shropshire-based property buyers</p>
+          <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.2)" }}>Direct residential property buyers</p>
         </div>
       </div>
     </footer>

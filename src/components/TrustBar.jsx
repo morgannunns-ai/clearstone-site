@@ -3,7 +3,6 @@ const SIGNALS = [
   "Offers in writing",
   "Probate experience",
   "No seller fees",
-  "Shropshire based",
 ];
 
 export default function TrustBar() {

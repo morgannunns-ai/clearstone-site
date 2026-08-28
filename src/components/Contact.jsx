@@ -66,7 +66,7 @@ export default function Contact() {
             </div>
 
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              {["Confidential","No fees, no obligation","A written offer, figures set out","Shropshire, the West Midlands & surrounding areas"].map(item => (
+              {["Confidential","No fees, no obligation","A written offer, figures set out"].map(item => (
                 <div key={item} style={{ display: "flex", alignItems: "center", gap: 10 }}>
                   <span style={{ color: "#6B8F6B", fontWeight: 700 }}>✓</span>
                   <span style={{ fontSize: "0.88rem", color: "#4A5568" }}>{item}</span>
